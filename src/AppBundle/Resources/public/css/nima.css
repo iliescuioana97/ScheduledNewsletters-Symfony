@@ -1,0 +1,122 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 3, 2017, 9:58:43 AM
+    Author     : ioana
+*/
+
+.logo{
+    top: -15px;
+    position: relative;
+}
+
+.sf-menu {
+    margin-top:22px;
+}
+
+.left-block {
+    margin-top: 10px;
+}
+
+.grid_2 {
+    margin-left:55px;
+    margin-right:55px;
+}
+
+
+.container ul li.active a, .container ul li a:hover {
+    text-decoration:none;
+    color:#c93b30;
+}
+
+.align {
+    text-align: justify;
+}
+
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.tab-links li {
+    margin: 0px 0px;
+    float: left;
+    list-style:none;
+    display:block;
+    width:100%;
+}
+
+.tab img {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.tab-links a {
+    padding:9px 15px;
+    margin: 5px 0px;
+    display:block;
+    border-radius:3px 3px 0px 0px;
+    background:#f3c7c2;
+    font-size:16px;
+    font-weight:600;
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+    background:#a7cce5;
+    text-decoration:none;
+}
+
+.tab-links .active a, .tab-links .active a:hover {
+    background:#fff;
+    color:#4c4c4c;
+}
+
+.tab-links {
+    margin-left: 5px;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding:15px;
+    border-radius:3px;
+    box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+    background:#fff;
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+}
+
+html, body {
+  height: 85%;
+  margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -20px;
+}
+.footer,
+.push {
+    height: 20px;
+}

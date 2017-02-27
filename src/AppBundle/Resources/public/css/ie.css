@@ -1,0 +1,42 @@
+
+.class { behavior:url(js/PIE.htc); position:absolute;}
+
+body {
+	min-width: 1132px;
+}
+#form .invalid .error-message, #form .empty .empty-message {
+	opacity: 1;
+	display: block;
+}
+#form .error-message, #form .empty-message {
+	display: none;
+}
+
+
+.blocks-list_img{
+	width: 56px;
+}
+blockquote img{
+	width: 33px;
+}
+blockquote a:hover{
+	text-decoration: underline;
+}
+
+.gallery .thumbs_img  .lbHover span{
+	display: none;
+}
+.gallery .thumbs_img div:hover .lbHover span{
+	display: block;
+	color: #e64c3c;
+}
+.text-block img{
+	max-height: 256px;
+}
+
+#gallerySlider .placeholder img{
+		height: 100%;
+		max-height: 600px;
+		width: auto;
+		max-width: 100%;
+	}

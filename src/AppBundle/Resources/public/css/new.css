@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 12, 2017, 4:40:21 PM
+    Author     : ioana
+*/
+#addtaskform {
+    margin-left: 500px;
+    margin-top: 70px;
+}
+
+.formcomp {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#addnewtasktitle {
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+#createbutton {
+    margin-top: 20px;
+    margin-left: 90px;
+}
