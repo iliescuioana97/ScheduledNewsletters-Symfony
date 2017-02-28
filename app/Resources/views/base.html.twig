@@ -36,10 +36,63 @@
         <script src="{{ asset('bundles/app/js/touchTouch.jquery.js') }}"></script>
 
     {% block stylesheets %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
 <body>
+    {% block header %}   
+        <header>
+            <div class="container">
+                <h1 class="logo"><a href="#"><img src="{{ asset('bundles/app/images/logoNima.png') }}" alt="NIMA SOFTWARE"></a></h1>
+                <ul class="sf-menu">
+                    <li ><a href="{{ url('home') }}">Home</a> </li>
+                    <li><a href="{{ url('history') }}">History</a></li>
+                    <li><a href="{{ url('music') }}">Music</a></li>
+                    <li><a href="{{ url('literature') }}">Literature</a></li>
+                    <li><a href="{{ url('painting') }}">Painting</a></li>
+                </ul>
+            </div>
+        </header>
+    {% endblock %}
+
 {% block body %}{% endblock %}
-{% block javascripts %}{% endblock %}
+
+{% block footer %}
+    <footer>
+        <div class="row_block row_block__indent-3 list-col">
+            <div class="container">
+                <div class="row">
+                    <ul class="grid_2">
+                        <li><h4 class="footer-title">OUR COMPANY</h4></li>
+                        <li>SC NimaSoftware SRL</li>
+                        <li>CUI: 34150371</li>
+                        <li>Nr. Reg. Com.: J22/314/2015</li>
+
+                    </ul>
+                    <ul class="grid_2">
+                        <li><h4 class="footer-title">LOCATION</h4></li>
+                        <li>Str. Elena Doamna Nr.20-22,</li>
+                        <li>Iasi Romania, Cladirea </li>
+                        <li>Bursa Moldovei, etaj 3</li>
+                    </ul>
+                    <ul class="grid_2">
+                        <li><h4 class="footer-title">CONTACT INFO</h4></li>
+                        <li>Phone Number:</li>
+                        <li>+40 773 397 283</li>
+                        <li>Email address:</li>
+                        <li>office@nimasoftware.com</li>
+                    </ul>
+                    <ul class="grid_2">
+                        <li><h4 class="footer-title">Contact Us</h4></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Google Plus</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
 </body>
 </html>

@@ -48,7 +48,8 @@ h1{
 }
 h2{
     color: #fff;
-    background-color:  #304D6D; 
+    background-color: #3C5233; 
+    opacity:0.8;
     font-weight: 700;
 }
 
@@ -71,7 +72,7 @@ h4{
     line-height: 18px;
     font-weight: 700;
     margin-bottom: 14px;
-    color: #e64c3c;
+    color: #521945;
 }
 h5{
     font-size: 24px;
@@ -101,7 +102,7 @@ img{
 
 header{
     position: relative;
-    background: #223243;
+    background: #521945;
     padding-top: 25px;
     /*padding-bottom: 21px; nima change */
 }
@@ -154,11 +155,12 @@ header img{
     position: relative;
 }
 .left-strip{
-    border-left: 6px solid #f3c7c2;	
+    border-left: 6px solid #521945;	
     display: inline-block;
     position: absolute;
     height: 100%;
     width: 6px;
+    opacity:0.5;
 }
 .left-block{
     margin-left: 27px;
@@ -362,7 +364,7 @@ blockquote a{
     position: absolute;
     right: 83px;
     bottom: -8px;
-    color: #e64c3c;
+    color: #521945;
     font-size: 14px;
 }
 blockquote a:hover{
@@ -457,7 +459,7 @@ blockquote a:hover:after{
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 8px;
-    color: #e64c3c;
+    color: #521945;
 }
 .info-col_col img{
     margin-top: -38px;
@@ -477,7 +479,7 @@ blockquote a:hover:after{
 .info-col_col .info_social i{
     font-size: 16px;
     line-height: 16px;
-    color: #e64c3c;
+    color: #521945;
     margin-right: 11px;
 }
 
@@ -504,7 +506,7 @@ ul.list{
     left: 0;
     top: 0;
     content: "";
-    color: #e64c3c;
+    color: #521945;
     position: absolute;
     pointer-events: none;
     -webkit-transition: 0.2s ease-out;
@@ -700,7 +702,7 @@ ul.list{
     min-width: 77px;
 }
 .contact a{
-    color: #e64c3c;
+    color: #521945;
 }
 
 /* Text Block
@@ -728,7 +730,7 @@ ul.list{
     margin-bottom: 3px;
 }
 .text-block__full a{
-    color: #e64c3c;
+    color: #521945;
 }
 
 /* To Top Button*/
@@ -763,7 +765,7 @@ ul.list{
 
 footer{
     padding: 20px 0 17px 0;
-    background: #223243;
+    background: #521945;
     width: 100%;
     bottom: 0;
 }

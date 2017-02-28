@@ -1,19 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <header>
-    <div class="container">
-        <h1 class="logo"><a href="#"><img src="{{ asset('bundles/app/images/logoNima.png') }}" alt="NIMA SOFTWARE"></a></h1>
-        <ul class="sf-menu">
-            <li ><a href="">Home</a> </li>
-            <li><a href="app_dev.php/about">About</a></li>
-            <li><a href="app_dev.php/services">Services</a></li>
-            <li><a href="app_dev.php/projects">Projects</a></li>
-            <!-- <li><a href="Blog.php">Blog</a></li> -->
-            <li><a href="">Contact</a></li>
-        </ul>
-    </div>
-</header>
+
     <title>NimaSoftware - Home</title>
 
     <!--======= Content ================================-->
@@ -21,55 +9,27 @@
     <!--========= Showcase =========-->
 
     <div class="showcase">
-        <img src="{{ asset('bundles/app/images/showcase-1.jpg') }}" alt="">
+        <img src="{{ asset('bundles/app/images/front.jpg') }}" alt="">
         <div class="container">
             <div class="showcase_text">
-                <h2 class="slogan__style-1">WE WILL</h2>
-                <h2 class="slogan__style-2">SHOW YOU THE WAY</h2>
-                <h2 class="slogan__style-3">TO SUCCESS!</h2>
-                <a href="" class="btn btn__in-showcase">
-                    <div class="btn_arrow">
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                    <div class="btn_text">View More</div>
-                </a>
+                <h2 class="slogan__style-2 row_block__indent-2">GET YOUR DAILY CULTURE DOSE</h2>
             </div>
         </div>
     </div>
 
     <!--========= Info =========-->
 
-    <div class="info row-with-strip row_block row_block__indent-1 row__style">
-        <div class="container">
-            <div class="left-strip"></div>
-            <div class="row">
-                <div class="grid_6">
-                    <div class="left-block">
-                        <h3>Welcome to Nima Software!</h3>
-                        <p>Nima Software is a driven and innovative provider of software development services with a young, resourceful and curious team of engineers. We plan on changing the world bit by bit, using technology to improve our daily lives. Join us on our adventure towards progress and discovery!  </p>                    
-                    </div>
-                </div>
-                <div class="grid_3 left-block__device-1"><img src="" alt=""></div>
-                <div class="grid_3 left-block__device-1"><img src="" alt=""></div>            
-            </div>   
-        </div>
-    </div>
-
-    <div class="row-with-strip row_block row_block__indent-2 bg-1">
+    <div class="row-with-strip row_block row_block__indent-1 bg-1">
         <div class="container">
             <div class="left-strip"></div>
             <div class="row">                                                   <!--========= Info =========-->
                 <div class="grid_4">
                     <div class="left-block">
-                        <h3>Our Mission</h3>
-                        <p class="p__indent">We plan on offering our clients the support they need in developing technological solutions to their every day struggles.</p>
-                        <p>We believe that there is no problem that cannot be solved through hard work and dedication. </p>
-                        <a href="" class="btn">
-                            <div class="btn_arrow">
-                                <i class="fa fa-angle-right"></i>
-                            </div>
-                            <div class="btn_text">Read More</div>
-                        </a>                        
+                        <h3 class="row_block__indent-2" >Our Mission</h3>
+                        <p class="p__indent">We plan on offering our subscribers an incredible cultural experience, encompanssing fiels such as: history, literature, painting and music, delivering their daily dose of knowledge in their email. <br/><br/>
+                            Once subscribed, you will be receiving daily newsletters with the newest stories from the area of interest you have chosen. <br/><br/>
+                            We deeply encouraged raising a generation of people that know how to price the value of the work of art we are presenting.
+                        </p>
                     </div>
                 </div>                                                          <!--========= Blocks List =========-->
                 <div class="grid_8">
@@ -77,10 +37,10 @@
                         <li class="grid_4">
                             <div class="box">
                                 <div class="maxheight">
-                                    <img src="" alt="" class="blocks-list_img">
+                                    <img src="{{ asset('bundles/app/images/historyicon.jpg') }}" alt="" class="blocks-list_img">
                                     <div class="blocks-list_text">
-                                        <h4>Dedicated Development Team</h4>
-                                        <p>We have an ever-growing team of young and receptive engineers, willing to satisfy all of our customers' needs.</p>                            
+                                        <h4>History</h4>
+                                        <p>History is the study of the past as it is described in written documents. It is an umbrella term that relates to past events as well as the memory, discovery, collection, organization, presentation, and interpretation of information about these events.</p>                            
                                     </div>
                                 </div>
                             </div>                       
@@ -88,10 +48,10 @@
                         <li class="grid_4">
                             <div class="box">
                                 <div class="maxheight">
-                                    <img src="" alt="" class="blocks-list_img">
+                                    <img src="{{ asset('bundles/app/images/literatureicon.jpg') }}" alt="" class="blocks-list_img">
                                     <div class="blocks-list_text">
-                                        <h4>Software QA & Testing</h4>
-                                        <p>At Nima Software we make sure that the software products we deliver to you is thoroughly tested by our team.</p>                            
+                                        <h4>Literature</h4>
+                                        <p>Literature, in its broadest sense, is any single body of written works. More restrictively, it is writing considered as an art form, or any single writing deemed to have artistic or intellectual value, often due to deploying language in ways that differ from ordinary usage.</p>                            
                                     </div>
                                 </div>
                             </div>                       
@@ -99,10 +59,10 @@
                         <li class="grid_4 last">
                             <div class="box">
                                 <div class="maxheight">
-                                    <img src="" alt="" class="blocks-list_img">
+                                    <img src="{{ asset('bundles/app/images/musicicon.jpg') }}" alt="" class="blocks-list_img">
                                     <div class="blocks-list_text">
-                                        <h4>Software Product Development</h4>
-                                        <p>We are fully equipped to deliver first-class services that result in improved business efficiency, increased cost-effectiveness, risk mitigation for our clients.</p>                            
+                                        <h4>Music</h4>
+                                        <p>In its most general form, the activities describing music as an art form or cultural activity include the creation of works of music (songs, tunes, symphonies, and so on), the criticism of music, the study of the history of music, and the aesthetic examination of music. </p>                            
                                     </div>
                                 </div>
                             </div>                       
@@ -110,10 +70,10 @@
                         <li class="grid_4 last">
                             <div class="box">
                                 <div class="maxheight">
-                                    <img src="" alt="" class="blocks-list_img">
+                                    <img src="{{ asset('bundles/app/images/paintingicon.jpg') }}" alt="" class="blocks-list_img">
                                     <div class="blocks-list_text">
-                                        <h4>Mobile Application Development</h4>
-                                        <p>We create responsive software products, that adapt perfectly to any mobile device . We can ensure the high quality of our mobile development solutions.</p>                            
+                                        <h4>Painting</h4>
+                                        <p>Painting is the practice of applying paint, pigment, color or other medium[1] to a solid surface (support base). The medium is commonly applied to the base with a brush, but other implements, such as knives, sponges, and airbrushes, can be used.</p>                            
                                     </div>
                                 </div>
                             </div>                       
@@ -121,6 +81,69 @@
                     </ul>                
                 </div>
             </div>  
+        </div>
+    </div>
+
+    <div class="info row-with-strip row_block row__style">
+        <div class="container">
+            <div class="left-strip"></div>
+            <div class="row">
+                <div class="grid_12">
+                    <div class="left-block">
+                        <p> You could say it takes a wild imagination to picture a truly open 
+                            society—one where freedom of expression and democracy are paramount, 
+                            and where no one holds a monopoly on the truth. Envisioning such a 
+                            world is the starting point for the Open Society Foundations’ work. 
+                            And often, it is the arts that make manifest that vision, lending 
+                            form to our goals and ideals.
+                        </p>                    
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    
+    <div class="info row-with-strip row_block row__style">
+        <div class="container">
+            <div class="left-strip"></div>
+            <div class="row">
+                <div class="grid_12">
+                    <div class="left-block">
+                        <p> 
+                            We have long supported artistic endeavors that aim to inspire this 
+                            type of change. Our Serbian and Kosovo foundations worked with both 
+                            of those governments to create a production of Shakespeare’s Romeo 
+                            and Juliet, a metaphor for promoting reconciliation between the two 
+                            countries which brought the audience to tears. We supported a 
+                            photography exhibition designed to prompt debate about official 
+                            government apologies in advance of the 100th anniversary of the 
+                            Armenian genocide. And our foundation in Haiti helped bring to the
+                            stage a theater festival aimed at civic-minded youth to spur debate 
+                            on issues ranging from corruption to intellectual freedom.
+                        </p>                    
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    
+    <div class="info row-with-strip row_block row__style">
+        <div class="container">
+            <div class="left-strip"></div>
+            <div class="row">
+                <div class="grid_12">
+                    <div class="left-block">
+                        <p> In each of these instances, the arts have been key to bringing 
+                            about positive change. We will continue to support arts and culture
+                            as we work to propel the ideals of open society forward. By giving 
+                            shape and voice to the goals we’re striving to achieve, we remind
+                            ourselves that the world we hope to someday see already exists in
+                            our creative endeavors.
+                        </p>                    
+                    </div>
+                </div>
+            </div>   
         </div>
     </div>
 
@@ -141,51 +164,9 @@
             </div> 
         </div>
     </div>
-    
-    
-    
-    
-<footer>
 
-
-    <div class="row_block row_block__indent-3 list-col">
-        <div class="container">
-            <div class="row">
-                <ul class="grid_2">
-                    <li><h4 class="footer-title">OUR COMPANY</h4></li>
-                    <li>SC NimaSoftware SRL</li>
-                    <li>CUI: 34150371</li>
-                    <li>Nr. Reg. Com.: J22/314/2015</li>
-
-                </ul>
-                <ul class="grid_2">
-                    <li><h4 class="footer-title">LOCATION</h4></li>
-                    <li>Str. Elena Doamna Nr.20-22,</li>
-                    <li>Iasi Romania, Cladirea </li>
-                    <li>Bursa Moldovei, etaj 3</li>
-                </ul>
-                <ul class="grid_2">
-                    <li><h4 class="footer-title">CONTACT INFO</h4></li>
-                    <li>Phone Number:</li>
-                    <li>+40 773 397 283</li>
-                    <li>Email address:</li>
-                    <li>office@nimasoftware.com</li>
-                </ul>
-                <ul class="grid_2">
-                    <li><h4 class="footer-title">Contact Us</h4></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Google Plus</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-</footer>
-
-<!--======= To Top Button =================================-->
-<a href="#" id="toTop">
-    <i class="fa fa-angle-up"></i>
-</a>
+    <!--======= To Top Button =================================-->
+    <a href="#" id="toTop">
+        <i class="fa fa-angle-up"></i>
+    </a>
 {% endblock %}
