@@ -1,0 +1,37 @@
+#taskmenu {
+    margin-left: 170px;
+}
+
+.column {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.taskMenuTitle {
+    margin-left: 350px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#createNewTask {
+    margin-top:10px;
+    margin-left: 610px;
+    display:inline-block;
+}
+
+#logOut {
+    margin-top:10px;
+    margin-left: 20px;
+    display:inline-block;
+}
+
+
+#btn-show {
+    margin-left: 40px;
+    display: block;
+}
+
+#btn-edit {
+    margin-left: 30px;
+
+}

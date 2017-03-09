@@ -1,0 +1,178 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+{% endblock %}
+
+{% block body %}
+
+    <title>NimaSoftware - Home</title>
+
+    <!--======= Content ================================-->
+
+    <!--========= Showcase =========-->
+
+    <div class="showcase">
+        <img src="{{ asset('bundles/app/images/front.jpg') }}" alt="">
+        <div class="container">
+            <div class="showcase_text">
+                <h2 class="slogan__style-2 row_block__indent-2">GET YOUR DAILY CULTURE DOSE</h2>
+                <div class="preffix_002 row_block__indent-1">
+                <a href="{{ url('subscription_new') }}"><button type="button" class=" myButton" style="">Subscribe now!</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--========= Info =========-->
+
+    <div class="row-with-strip row_block row_block__indent-1 bg-1">
+        <div class="container">
+            <div class="left-strip"></div>
+            <div class="row">                                                   <!--========= Info =========-->
+                <div class="grid_4">
+                    <div class="left-block">
+                        <h3 class="row_block__indent-2" >Our Mission</h3>
+                        <p class="p__indent">We plan on offering our subscribers an incredible cultural experience, encompanssing fiels such as: history, literature, painting and music, delivering their daily dose of knowledge in their email. <br/><br/>
+                            Once subscribed, you will be receiving daily newsletters with the newest stories from the area of interest you have chosen. <br/><br/>
+                            We deeply encouraged raising a generation of people that know how to price the value of the work of art we are presenting.
+                        </p>
+                    </div>
+                </div>                                                          <!--========= Blocks List =========-->
+                <div class="grid_8">
+                    <ul class="blocks-list row">
+                        <li class="grid_4">
+                            <div class="box">
+                                <div class="maxheight">
+                                    <img src="{{ asset('bundles/app/images/historyicon.jpg') }}" alt="" class="blocks-list_img">
+                                    <div class="blocks-list_text">
+                                        <h4>History</h4>
+                                        <p>History is the study of the past as it is described in written documents. It is an umbrella term that relates to past events as well as the memory, discovery, collection, organization, presentation, and interpretation of information about these events.</p>                            
+                                    </div>
+                                </div>
+                            </div>                       
+                        </li>
+                        <li class="grid_4">
+                            <div class="box">
+                                <div class="maxheight">
+                                    <img src="{{ asset('bundles/app/images/literatureicon.jpg') }}" alt="" class="blocks-list_img">
+                                    <div class="blocks-list_text">
+                                        <h4>Literature</h4>
+                                        <p>Literature, in its broadest sense, is any single body of written works. More restrictively, it is writing considered as an art form, or any single writing deemed to have artistic or intellectual value, often due to deploying language in ways that differ from ordinary usage.</p>                            
+                                    </div>
+                                </div>
+                            </div>                       
+                        </li>
+                        <li class="grid_4 last">
+                            <div class="box">
+                                <div class="maxheight">
+                                    <img src="{{ asset('bundles/app/images/musicicon.jpg') }}" alt="" class="blocks-list_img">
+                                    <div class="blocks-list_text">
+                                        <h4>Music</h4>
+                                        <p>In its most general form, the activities describing music as an art form or cultural activity include the creation of works of music (songs, tunes, symphonies, and so on), the criticism of music, the study of the history of music, and the aesthetic examination of music. </p>                            
+                                    </div>
+                                </div>
+                            </div>                       
+                        </li>
+                        <li class="grid_4 last">
+                            <div class="box">
+                                <div class="maxheight">
+                                    <img src="{{ asset('bundles/app/images/paintingicon.jpg') }}" alt="" class="blocks-list_img">
+                                    <div class="blocks-list_text">
+                                        <h4>Painting</h4>
+                                        <p>Painting is the practice of applying paint, pigment, color or other medium[1] to a solid surface (support base). The medium is commonly applied to the base with a brush, but other implements, such as knives, sponges, and airbrushes, can be used.</p>                            
+                                    </div>
+                                </div>
+                            </div>                       
+                        </li>
+                    </ul>                
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="info row-with-strip row_block row__style">
+        <div class="container">
+            <div class="left-strip"></div>
+            <div class="row">
+                <div class="grid_12">
+                    <div class="left-block">
+                        <p> You could say it takes a wild imagination to picture a truly open 
+                            society—one where freedom of expression and democracy are paramount, 
+                            and where no one holds a monopoly on the truth. Envisioning such a 
+                            world is the starting point for the Open Society Foundations’ work. 
+                            And often, it is the arts that make manifest that vision, lending 
+                            form to our goals and ideals.
+                        </p>                    
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+
+    <div class="info row-with-strip row_block row__style">
+        <div class="container">
+            <div class="left-strip"></div>
+            <div class="row">
+                <div class="grid_12">
+                    <div class="left-block">
+                        <p> 
+                            We have long supported artistic endeavors that aim to inspire this 
+                            type of change. Our Serbian and Kosovo foundations worked with both 
+                            of those governments to create a production of Shakespeare’s Romeo 
+                            and Juliet, a metaphor for promoting reconciliation between the two 
+                            countries which brought the audience to tears. We supported a 
+                            photography exhibition designed to prompt debate about official 
+                            government apologies in advance of the 100th anniversary of the 
+                            Armenian genocide. And our foundation in Haiti helped bring to the
+                            stage a theater festival aimed at civic-minded youth to spur debate 
+                            on issues ranging from corruption to intellectual freedom.
+                        </p>                    
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <div class="info row-with-strip row_block row__style">
+        <div class="container">
+            <div class="left-strip"></div>
+            <div class="row">
+                <div class="grid_12">
+                    <div class="left-block">
+                        <p> In each of these instances, the arts have been key to bringing 
+                            about positive change. We will continue to support arts and culture
+                            as we work to propel the ideals of open society forward. By giving 
+                            shape and voice to the goals we’re striving to achieve, we remind
+                            ourselves that the world we hope to someday see already exists in
+                            our creative endeavors.
+                        </p>                    
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <!--========= Quotes =========-->
+
+    <div class="row-with-strip row_block row_block__indent-3 row__style">
+        <div class="container">
+            <div class="left-strip"></div>
+            <div class="quotes">
+                <div class="left-block">
+                    <h3>Testimonials</h3>
+                    <blockquote>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis sodales libero. Quisque et pharetra arcu, mattis ultricies erat. Duis elit erat, viverra at tellueget,facbus facilisis augue. Pellentesque laciniaortor at tellus pellsque rutrum. Fusce id risus risus. Maecenas tempus, auctor felis icursus tortor. Quisque pulvinar neque mattis, tporqel vitae, pellentesque ipsum.Pellentesque rhoncus consectetur augue at rhoncus. Aenean pharetra libero sed massa rhoncus varius. Suspendisse consequat interdum orcietli vitae bibendum nulla vestibulum sed. Praesent vitae neque ac velit pellentesque iaculis et in nisi.</p>
+                        <a href="#">Linda Green</a>
+                    </blockquote>                
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!--======= To Top Button =================================-->
+    <a href="#" id="toTop">
+        <i class="fa fa-angle-up"></i>
+    </a>
+{% endblock %}

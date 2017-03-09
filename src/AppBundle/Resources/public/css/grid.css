@@ -213,6 +213,7 @@ table {
 .grid_1 {
     width: 76px;
 }
+
 .preffix_12 {
     margin-left: 1172px;
 }
@@ -299,6 +300,10 @@ table {
         margin-left: 330px;
     }
 
+    .preffix_002 {
+        margin-left: 420px;
+    }
+
     .grid_9 {
         width: 800px;
     }
@@ -307,8 +312,8 @@ table {
         margin-left: 125px;
     }
     .preffix_05 {
-    margin-left: 90px;
-}
+        margin-left: 90px;
+    }
 }
 
 @media (min-width: 980px) and (max-width: 1199px) {
@@ -371,6 +376,7 @@ table {
     .grid_2 {
         width: 130px;
     }
+
     .grid_1 {
         width: 60px;
     }
@@ -419,6 +425,10 @@ table {
         margin-left: 150px;
     }
 
+    .preffix_002 {
+        margin-left: 350px;
+    }
+
     .preffix_0 {
         margin-left: 50px;
     }
@@ -431,8 +441,8 @@ table {
         margin-left: 72px;
     }
     .preffix_05 {
-    margin-left: 65px;
-}
+        margin-left: 65px;
+    }
 }
 @media (min-width: 768px) and (max-width: 979px) {
     .row {
@@ -544,6 +554,11 @@ table {
     .preffix_02 {
         margin-left: 100px;
     }
+
+    .preffix_002 {
+        margin-left: 300px;
+    }
+
     .preffix_03 {
         margin-left: 80px;
     }
@@ -551,9 +566,9 @@ table {
     .preffix_04 {
         margin-left: 65px;
     }
-     .preffix_05 {
-    margin-left: 40px;
-}
+    .preffix_05 {
+        margin-left: 40px;
+    }
 
 }
 .select-menu {
@@ -579,7 +594,7 @@ table {
     .select-menu {
         display: block !important;
     }
-    
+
 
 
 }
@@ -634,7 +649,7 @@ table {
         width: 200px;
 
     }
-    
+
     .grid_2 {
         width: 150px;
 
@@ -666,9 +681,9 @@ table {
         margin-bottom: 20px;
         margin-top: 20px;
     }
-     .preffix_05 {
-    margin-left: 25px;
-}
+    .preffix_05 {
+        margin-left: 25px;
+    }
 }
 
 @media (max-width: 350px) {

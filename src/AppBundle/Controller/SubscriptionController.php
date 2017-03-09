@@ -13,22 +13,21 @@ use Symfony\Component\HttpFoundation\Request;
  *
  * @Route("subscription")
  */
-class SubscriptionController extends Controller
-{
+class SubscriptionController extends Controller {
+
     /**
      * Lists all subscription entities.
      *
      * @Route("/", name="subscription_index")
      * @Method("GET")
      */
-    public function indexAction()
-    {
+    public function indexAction() {
         $em = $this->getDoctrine()->getManager();
 
         $subscriptions = $em->getRepository('AppBundle:Subscription')->findAll();
 
         return $this->render('AppBundle:subscription:index.html.twig', array(
-            'subscriptions' => $subscriptions,
+                    'subscriptions' => $subscriptions,
         ));
     }
 
@@ -38,24 +37,30 @@ class SubscriptionController extends Controller
      * @Route("/new", name="subscription_new")
      * @Method({"GET", "POST"})
      */
-    public function newAction(Request $request)
-    {
+    public function newAction(Request $request) {
         $subscription = new Subscription();
+        $subdate = new \DateTime();
+        $subscription->setSubdate($subdate);
         $form = $this->createForm('AppBundle\Form\SubscriptionType', $subscription);
         $form->handleRequest($request);
 
+
+
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+
             $em->persist($subscription);
             $em->flush($subscription);
 
             return $this->redirectToRoute('subscription_show', array('id' => $subscription->getId()));
         }
 
-        return $this->render('AppBundle:subscription:new.html.twig', array(
-            'subscription' => $subscription,
-            'form' => $form->createView(),
+        return $this->render('AppBundle:pages:form.html.twig', array(
+                    'subscription' => $subscription,
+                    'form' => $form->createView(),
         ));
+
+//        return $this->render('AppBundle:newsletter:form.html.twig');
     }
 
     /**
@@ -64,13 +69,12 @@ class SubscriptionController extends Controller
      * @Route("/{id}", name="subscription_show")
      * @Method("GET")
      */
-    public function showAction(Subscription $subscription)
-    {
+    public function showAction(Subscription $subscription) {
         $deleteForm = $this->createDeleteForm($subscription);
 
         return $this->render('AppBundle:subscription:show.html.twig', array(
-            'subscription' => $subscription,
-            'delete_form' => $deleteForm->createView(),
+                    'subscription' => $subscription,
+                    'delete_form' => $deleteForm->createView(),
         ));
     }
 
@@ -80,8 +84,7 @@ class SubscriptionController extends Controller
      * @Route("/{id}/edit", name="subscription_edit")
      * @Method({"GET", "POST"})
      */
-    public function editAction(Request $request, Subscription $subscription)
-    {
+    public function editAction(Request $request, Subscription $subscription) {
         $deleteForm = $this->createDeleteForm($subscription);
         $editForm = $this->createForm('AppBundle\Form\SubscriptionType', $subscription);
         $editForm->handleRequest($request);
@@ -93,9 +96,9 @@ class SubscriptionController extends Controller
         }
 
         return $this->render('AppBundle:subscription:edit.html.twig', array(
-            'subscription' => $subscription,
-            'edit_form' => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
+                    'subscription' => $subscription,
+                    'edit_form' => $editForm->createView(),
+                    'delete_form' => $deleteForm->createView(),
         ));
     }
 
@@ -105,8 +108,7 @@ class SubscriptionController extends Controller
      * @Route("/{id}", name="subscription_delete")
      * @Method("DELETE")
      */
-    public function deleteAction(Request $request, Subscription $subscription)
-    {
+    public function deleteAction(Request $request, Subscription $subscription) {
         $form = $this->createDeleteForm($subscription);
         $form->handleRequest($request);
 
@@ -126,12 +128,12 @@ class SubscriptionController extends Controller
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    private function createDeleteForm(Subscription $subscription)
-    {
+    private function createDeleteForm(Subscription $subscription) {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('subscription_delete', array('id' => $subscription->getId())))
-            ->setMethod('DELETE')
-            ->getForm()
+                        ->setAction($this->generateUrl('subscription_delete', array('id' => $subscription->getId())))
+                        ->setMethod('DELETE')
+                        ->getForm()
         ;
     }
+
 }

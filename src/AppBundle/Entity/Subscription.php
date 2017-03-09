@@ -48,7 +48,8 @@ class Subscription {
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank()
+     * @ORM\Column(type="integer", length=10)
      */
     private $subarea_id;
 

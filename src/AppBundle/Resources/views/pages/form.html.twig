@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('bundles/app/css/subscribeForm.css') }}" />{% endblock %}
+
+{% block body %}
+    <div class="wrapper row_block row_block__indent-1 row__style gallery thumbs">
+        <div class="container" id="tabs">
+            <div class="container">
+                <section id="content">
+
+                    <h1>Subscription Form</h1>
+
+                    {{ form_start(form) }}
+                    {{ form_label(form.firstname) }}
+                    {{ form_widget(form.firstname,{ 'attr': {'class': 'username'} }) }}
+                    {{ form_label(form.surname) }}
+                    {{ form_widget(form.surname) }}
+                    {{ form_label(form.email) }}
+                    {{ form_widget(form.email) }}
+                    {{ form_label(form.subarea_id) }}
+                    {{ form_widget(form.subarea_id) }}
+                    {{ form_label(form.save) }}
+                    {{ form_widget(form.save) }}
+                    {{ form_end(form) }}
+
+                </section><!-- content -->
+            </div><!-- container -->
+        </div>
+    </div>
+    <div class="push"></div>
+{% endblock %}
